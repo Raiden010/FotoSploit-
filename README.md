@@ -39,9 +39,9 @@
 # Screenhost 
    ![e](https://user-images.githubusercontent.com/46208706/69989984-70876880-150a-11ea-96ef-efe7a91f54f0.jpg)
 # Eye!!!
-     El link portador por serveo o ngrokles informo que 
+     El link portador por serveo o ngrok informo que 
       en massanger [Facebook] no saca la foto de la víctima:( 
-      El link solo saca la foto en Whatzapp o en telegram u otro hat ok!
+      El link solo saca la foto en Whatzapp o en telegram u otro chat ok!
 
 #### comunity:https://t.me/CesarGray:https://www.CesarHackGray.com:https://t.me/CesarHackGray
 #### Channel :http://youtube.com/c/CésarHackGray_Y_Miickeyy : https://t.me/CesarHackGrayCanal
