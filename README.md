@@ -4,7 +4,7 @@
 
     FotoSploit in
     kali Linux [nethunter]
-    userLand
+    UserLand 
     ubuntu 
     parrot
     etc..
