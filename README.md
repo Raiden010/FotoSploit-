@@ -17,7 +17,7 @@
     pkg install -y python2
     pkg install -y git
     cd $HOME
-    git clone https://github.com/Cesar-Hack-Gray/FotoSploit
+    git clone https://github.com/Raiden010/FotoSploit-
     cd FotoSploit 
     ls
     bash install.sh
@@ -28,7 +28,7 @@
     pkg install -y python2
     pkg install -y git
     cd $HOME
-    git clone https://github.com/Cesar-Hack-Gray/FotoSploit
+    git clone https://github.com/Raiden010/FotoSploit-
     cd FotoSploit 
     ls
     bash install.sh --install --premium 
