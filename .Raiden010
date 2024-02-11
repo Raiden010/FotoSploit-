@@ -1,0 +1,38 @@
+            src += ch
+        elif ch in (' ', '\t') \
+                and (it.getPreviousCharacter() in other_delimiters or
+                             it.getNextCharacter() in other_delimiters) \
+                and it.getNextCharacters(2) not in ('<(', '>('):  # process substitution
+                                                                    # see test t_process_substitution.sh for details
+            continue
+        else:
+            src += ch
+
+    return src
+
+
+if __name__ == "__main__":
+    # https://www.gnu.org/software/bash/manual/html_node/Reserved-Word-Index.html
+    # http://pubs.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html
+    # http://pubs.opengroup.org/onlinepubs/9699919799/
+
+    # get bash source from file or from stdin
+    src = ""
+    if len(sys.argv) > 1:
+        with open(sys.argv[1], "r") as ifile:
+            src = ifile.read()
+    else:
+        src = sys.stdin.read()
+    # use stdout.write instead of print to avoid newline at the end (print with comma at the end does not work)
+    sys.stdout.write(minify(src))
+
+
+# important rules:
+# 1. A single-quote cannot occur within single-quotes.
+# 2. The input characters within the double-quoted string that are also enclosed between "$(" and the matching ')'
+#    shall not be affected by the double-quotes, but rather shall define that command whose output replaces the "$(...)"
+#    when the word is expanded.
+# 3. Within the double-quoted string of characters from an enclosed "${" to the matching '}', an even number of
+#    unescaped double-quotes or single-quotes, if any, shall occur. A preceding <backslash> character shall be used
+#    to escape a literal '{' or '}'
+# 4.
